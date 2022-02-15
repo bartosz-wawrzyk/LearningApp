@@ -1,93 +1,99 @@
-import React, {useEffect, useState} from 'react';
-import {StyleSheet, Text, View,TouchableOpacity, ScrollView} from 'react-native';
+import React, {useEffect, useState, useRef} from 'react';
+import {StyleSheet, Text, View, TouchableOpacity, ScrollView} from 'react-native';
 
 
 const MotoBegginer = ({navigation}) => {
 
-    return (
-        <ScrollView>
-            <View style = {styles.containers}>
 
-                <View style = {styles.tittle}>
-                    <Text style = {styles.word}>Samochód</Text>
-                </View>
-                <View style = {styles.optiones}>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>cabin</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>caravan</Text>
-                    </TouchableOpacity>
-                </View>
+    const [color,setColor]=useState("#228B22");
 
-                <View style = {styles.tittle}>
-                    <Text style = {styles.word}>Kajak</Text>
-                </View>
-                <View style = {styles.optiones}>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>Car park</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>carriage</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>canoe</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>flight</Text>
-                    </TouchableOpacity>
-                </View>
 
-                <View style = {styles.tittle}>
-                    <Text style = {styles.word}>Wypadek samochodowy</Text>
-                </View>
-                <View style = {styles.optiones}>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>cabin crew</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bus-driver</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car accident</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car park</Text>
-                    </TouchableOpacity>
-                </View>
+        return (
+            <ScrollView>
+                <View style={styles.containers}>
 
-                <View style = {styles.tittle}>
-                    <Text style = {styles.word}>Złapać samolot</Text>
-                </View>
-                <View style = {styles.optiones}>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>catch a flight</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>catch a taxi</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>change trains</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bus stop</Text>
-                    </TouchableOpacity>
-                </View>
+                    <View style={styles.tittle}>
+                        <Text style={styles.word}>Samochód</Text>
+                    </View>
+                    <View style={styles.optiones}>
+                        {/*<TouchableOpacity style={{backgroundColor: color}} onPress={()=>{setColor("black")}}>*/}
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>car</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>cabin</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>bike</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>caravan</Text>
+                        </TouchableOpacity>
+                    </View>
 
-                <View style = {styles.next}>
-                    <TouchableOpacity onPress={()=>navigation.navigate("Result")} style = {styles.button}>
-                        <Text  style = {styles.buttonText}>SPRAWDŹ</Text>
-                    </TouchableOpacity>
+                    <View style={styles.tittle}>
+                        <Text style={styles.word}>Kajak</Text>
+                    </View>
+                    <View style={styles.optiones}>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>Car park</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>carriage</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>canoe</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>flight</Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.tittle}>
+                        <Text style={styles.word}>Wypadek samochodowy</Text>
+                    </View>
+                    <View style={styles.optiones}>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>cabin crew</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>bus-driver</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>car accident</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>car park</Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.tittle}>
+                        <Text style={styles.word}>Złapać samolot</Text>
+                    </View>
+                    <View style={styles.optiones}>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>catch a flight</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>catch a taxi</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>change trains</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonOption}>
+                            <Text style={styles.option}>bus stop</Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style={styles.next}>
+                        <TouchableOpacity onPress={() => navigation.navigate("Result")} style={styles.button}>
+                            <Text style={styles.buttonText}>SPRAWDŹ</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-            </View>
-        </ScrollView>
-    );
+            </ScrollView>
+        );
+
 }
 
 export default MotoBegginer;
@@ -137,7 +143,6 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         marginVertical: 6,
         backgroundColor: '#228B22',
-        paddingHorizontal: 12,
         borderRadius: 12,
         alignItems: 'center',
     },
@@ -147,4 +152,15 @@ const styles = StyleSheet.create({
         color: 'white',
 
     },
+    goodAnswer: {
+        backgroundColor: 'red',
+    },
+    test: {
+        fontSize: 20,
+        fontWeight: '300',
+        color: 'white',
+        paddingVertical: 12,
+        marginVertical: 6,
+        textAlign: 'center',
+    }
 });

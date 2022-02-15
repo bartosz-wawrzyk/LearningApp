@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View,TouchableOpacity, ScrollView} from 'react-native';
 
 const HouseExpert = ({navigation}) => {

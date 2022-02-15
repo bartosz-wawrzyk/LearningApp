@@ -11,7 +11,7 @@ const Categories = ({navigation}) => {
             <Text style={styles.firstText}>ANGIELSKI W PIGUŁCE</Text>
             <Image source={require('../images/icon1.png')} style={styles.image}/>
             <Text style={styles.secondText}>Wybierz kategorię</Text>
-            <TouchableOpacity onPress={()=>navigation.navigate("MotoHome")} style = {styles.button} id = {1}>
+            <TouchableOpacity onPress={()=>navigation.navigate("MotoHome")} style = {styles.button}>
                 <Text style = {styles.buttonText}>Podróże</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={()=>navigation.navigate("FoodHome")} style = {styles.button}>
