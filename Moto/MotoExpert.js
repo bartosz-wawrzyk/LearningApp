@@ -8,38 +8,74 @@ const MotoExpert = ({navigation}) => {
             <View style = {styles.containers}>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>Expert</Text>
+                    <Text style = {styles.word}>Zwiedzić katedrę</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car</Text>
+                        <Text style = {styles.option}>seaside</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apple</Text>
+                        <Text style = {styles.option}>see sb off</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>see an exhibition</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>green</Text>
+                        <Text style = {styles.option}>see a cathedral</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>rower</Text>
+                    <Text style = {styles.word}>Biuro informacji turystycznej</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>sadas</Text>
+                        <Text style = {styles.option}>summer holidays</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apsadasdple</Text>
+                        <Text style = {styles.option}>tourist information office</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>tourist destination</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>gredsadsaden</Text>
+                        <Text style = {styles.option}>three-star hotel</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Wycieczka piesza</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>walking tour</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>windsurf</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>winter holidays</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>wonderful views</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Podróże kształcą</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>travel by plane</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>travel by air</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>travel broadens the mind</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>travel by sea</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,9 +112,10 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         justifyContent:'space-between',
         flexDirection: 'row',
+        marginTop: 20,
     },
     button: {
-        backgroundColor: '#1A759F',
+        backgroundColor: '#006400',
         padding: 16,
         paddingHorizontal: 16,
         borderRadius: 16,
@@ -98,13 +135,15 @@ const styles = StyleSheet.create({
     buttonOption: {
         paddingVertical: 12,
         marginVertical: 6,
-        backgroundColor: '#34A0A4',
+        backgroundColor: '#228B22',
         paddingHorizontal: 12,
         borderRadius: 12,
+        alignItems: 'center',
     },
     option: {
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '300',
         color: 'white',
-    }
+
+    },
 });

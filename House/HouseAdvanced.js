@@ -8,38 +8,74 @@ const HouseAdvanced = ({navigation}) => {
             <View style = {styles.containers}>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>HouseAdvanced</Text>
+                    <Text style = {styles.word}>Zegar</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car</Text>
+                        <Text style = {styles.option}>clock</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apple</Text>
+                        <Text style = {styles.option}>cloth</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>color</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>green</Text>
+                        <Text style = {styles.option}>cup</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>rower</Text>
+                    <Text style = {styles.word}>Dom wolnostojący</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>sadas</Text>
+                        <Text style = {styles.option}>cramped</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apsadasdple</Text>
+                        <Text style = {styles.option}>curtains</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>cushion</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>gredsadsaden</Text>
+                        <Text style = {styles.option}>detached house</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Wycieraczka do butów</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>drain</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>doormat</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>drier</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>dust</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Tęsknić za domem</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>fitted kitchen</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>elevator</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>feel homesick</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>farmhouse</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,9 +112,10 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         justifyContent:'space-between',
         flexDirection: 'row',
+        marginTop: 20,
     },
     button: {
-        backgroundColor: '#1A759F',
+        backgroundColor: '#006400',
         padding: 16,
         paddingHorizontal: 16,
         borderRadius: 16,
@@ -98,13 +135,15 @@ const styles = StyleSheet.create({
     buttonOption: {
         paddingVertical: 12,
         marginVertical: 6,
-        backgroundColor: '#34A0A4',
+        backgroundColor: '#228B22',
         paddingHorizontal: 12,
         borderRadius: 12,
+        alignItems: 'center',
     },
     option: {
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '300',
         color: 'white',
-    }
+
+    },
 });

@@ -9,10 +9,10 @@ const Categories = ({navigation}) => {
     return (
         <View style = {styles.banner}>
             <Text style={styles.firstText}>ANGIELSKI W PIGUŁCE</Text>
-            <Image source={require('../images/iconcategories.png')} style={styles.image}/>
+            <Image source={require('../images/icon1.png')} style={styles.image}/>
             <Text style={styles.secondText}>Wybierz kategorię</Text>
             <TouchableOpacity onPress={()=>navigation.navigate("MotoHome")} style = {styles.button} id = {1}>
-                <Text style = {styles.buttonText}>Motoryzacja</Text>
+                <Text style = {styles.buttonText}>Podróże</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={()=>navigation.navigate("FoodHome")} style = {styles.button}>
                 <Text style = {styles.buttonText}>Jedzenie</Text>
@@ -36,13 +36,13 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     image: {
-        height:250,
-        width:250,
-        marginBottom: 15,
+        height:300,
+        width:350,
+        marginBottom: 1,
     },
     button: {
         width: '100%',
-        backgroundColor: '#1A759F',
+        backgroundColor: '#228B22',
         padding: 16,
         borderRadius: 16,
         alignItems: 'center',
@@ -62,5 +62,7 @@ const styles = StyleSheet.create({
     firstText: {
         fontSize: 30,
         marginBottom: 20,
+        color: '#006400',
+        fontWeight: 'bold',
     },
 });

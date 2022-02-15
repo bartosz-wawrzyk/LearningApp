@@ -8,38 +8,74 @@ const FoodBegginer = ({navigation}) => {
             <View style = {styles.containers}>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>FoodBegginer</Text>
+                    <Text style = {styles.word}>Jabłko</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car</Text>
+                        <Text style = {styles.option}>tomato</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
                         <Text style = {styles.option}>apple</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>bean</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>green</Text>
+                        <Text style = {styles.option}>beef</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>rower</Text>
+                    <Text style = {styles.word}>Jagoda</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>sadas</Text>
+                        <Text style = {styles.option}>blueberry</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apsadasdple</Text>
+                        <Text style = {styles.option}>beet</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>banana</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>gredsadsaden</Text>
+                        <Text style = {styles.option}>birthday cake</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Krem</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>butter cream</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>butter</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>broth</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>candy</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Ser</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>chips</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>carp</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>celery</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>cheese</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,9 +112,10 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         justifyContent:'space-between',
         flexDirection: 'row',
+        marginTop: 20,
     },
     button: {
-        backgroundColor: '#1A759F',
+        backgroundColor: '#006400',
         padding: 16,
         paddingHorizontal: 16,
         borderRadius: 16,
@@ -98,13 +135,15 @@ const styles = StyleSheet.create({
     buttonOption: {
         paddingVertical: 12,
         marginVertical: 6,
-        backgroundColor: '#34A0A4',
+        backgroundColor: '#228B22',
         paddingHorizontal: 12,
         borderRadius: 12,
+        alignItems: 'center',
     },
     option: {
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '300',
         color: 'white',
+
     }
 });

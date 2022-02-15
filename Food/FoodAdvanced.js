@@ -8,38 +8,74 @@ const FoodAdvanced = ({navigation}) => {
             <View style = {styles.containers}>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>FoodAdvanced</Text>
+                    <Text style = {styles.word}>Ciasteczka</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car</Text>
+                        <Text style = {styles.option}>cookies</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apple</Text>
+                        <Text style = {styles.option}>crab</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>cream</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>green</Text>
+                        <Text style = {styles.option}>dessert</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>rower</Text>
+                    <Text style = {styles.word}>Pączek</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>sadas</Text>
+                        <Text style = {styles.option}>doughnut</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apsadasdple</Text>
+                        <Text style = {styles.option}>dish</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>dinner</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>gredsadsaden</Text>
+                        <Text style = {styles.option}>drink</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Kaczka</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>duck</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>eggs</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>fish</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>flour</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Owoc</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>fruit</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>ham</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>garlic</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>fresh</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,9 +112,10 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         justifyContent:'space-between',
         flexDirection: 'row',
+        marginTop: 20,
     },
     button: {
-        backgroundColor: '#1A759F',
+        backgroundColor: '#006400',
         padding: 16,
         paddingHorizontal: 16,
         borderRadius: 16,
@@ -98,13 +135,15 @@ const styles = StyleSheet.create({
     buttonOption: {
         paddingVertical: 12,
         marginVertical: 6,
-        backgroundColor: '#34A0A4',
+        backgroundColor: '#228B22',
         paddingHorizontal: 12,
         borderRadius: 12,
+        alignItems: 'center',
     },
     option: {
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '300',
         color: 'white',
+
     }
 });

@@ -8,38 +8,74 @@ const FoodExpert = ({navigation}) => {
             <View style = {styles.containers}>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>FoodExpert</Text>
+                    <Text style = {styles.word}>Cytryna</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>car</Text>
+                        <Text style = {styles.option}>lemon</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apple</Text>
+                        <Text style = {styles.option}>leek</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>lamb</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>green</Text>
+                        <Text style = {styles.option}>lunch</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>rower</Text>
+                    <Text style = {styles.word}>Główne danie</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>sadas</Text>
+                        <Text style = {styles.option}>meatball</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>apsadasdple</Text>
+                        <Text style = {styles.option}>meat</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>bike</Text>
+                        <Text style = {styles.option}>mackerel</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.buttonOption}>
-                        <Text style = {styles.option}>gredsadsaden</Text>
+                        <Text style = {styles.option}>main course</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Małż jadalny</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>mussel</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>loin</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>noodles</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>nibbles</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {styles.tittle}>
+                    <Text style = {styles.word}>Grochówka</Text>
+                </View>
+                <View style = {styles.optiones}>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>parsley</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>pear</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>pea soup</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.buttonOption}>
+                        <Text style = {styles.option}>peach</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,9 +112,10 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         justifyContent:'space-between',
         flexDirection: 'row',
+        marginTop: 20,
     },
     button: {
-        backgroundColor: '#1A759F',
+        backgroundColor: '#006400',
         padding: 16,
         paddingHorizontal: 16,
         borderRadius: 16,
@@ -98,13 +135,15 @@ const styles = StyleSheet.create({
     buttonOption: {
         paddingVertical: 12,
         marginVertical: 6,
-        backgroundColor: '#34A0A4',
+        backgroundColor: '#228B22',
         paddingHorizontal: 12,
         borderRadius: 12,
+        alignItems: 'center',
     },
     option: {
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '300',
         color: 'white',
-    }
+
+    },
 });
