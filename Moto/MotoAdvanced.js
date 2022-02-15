@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View,TouchableOpacity, ScrollView} from 'react-native';
 
-const Begginer = ({navigation}) => {
+const MotoAdvenced = ({navigation}) => {
 
     return (
         <ScrollView>
             <View style = {styles.containers}>
 
                 <View style = {styles.tittle}>
-                    <Text style = {styles.word}>Samochód</Text>
+                    <Text style = {styles.word}>Advenced</Text>
                 </View>
                 <View style = {styles.optiones}>
                     <TouchableOpacity style = {styles.buttonOption}>
@@ -53,11 +53,11 @@ const Begginer = ({navigation}) => {
     );
 }
 
-export default Begginer;
+export default MotoAdvenced;
 
 const styles = StyleSheet.create({
     containers: {
-      paddingTop: 40,
+        paddingTop: 40,
         height: '100%',
         paddingHorizontal: 20,
 

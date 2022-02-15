@@ -1,32 +1,31 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
-import Begginer from "./begginer";
-import Advanced from "./advanced";
-import Expert from "./expert";
-import Categories from "./categories";
+import FoodBegginer from "../Food/FoodBegginer";
+import FoodAdvanced from "../Food/FoodAdvanced";
+import FoodExpert from "../Food/FoodExpert";
 
 
-const Home = ({navigation}) => {
+const FoodHome = ({navigation}) => {
 
     return (
         <View style = {styles.banner}>
             <Text style={styles.firstText}>ANGIELSKI W PIGUŁCE</Text>
             <Image source={require('../images/home.png')} style={styles.image}/>
             <Text style={styles.secondText}>Wybierz poziom twoich umiejętności</Text>
-            <TouchableOpacity onPress={()=>navigation.navigate("Begginer")} style = {styles.button}>
+            <TouchableOpacity onPress={()=>navigation.navigate("FoodBegginer")} style = {styles.button}>
                 <Text style = {styles.buttonText}>Początkujący</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>navigation.navigate("Advanced")} style = {styles.button}>
+            <TouchableOpacity onPress={()=>navigation.navigate("FoodAdvanced")} style = {styles.button}>
                 <Text style = {styles.buttonText}>Zaawansowany</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>navigation.navigate("Expert")} style = {styles.button}>
+            <TouchableOpacity onPress={()=>navigation.navigate("FoodExpert")} style = {styles.button}>
                 <Text style = {styles.buttonText}>Ekspert</Text>
             </TouchableOpacity>
         </View>
     );
 }
 
-export default Home;
+export default FoodHome;
 
 const styles = StyleSheet.create({
     banner: {
@@ -38,8 +37,8 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     image: {
-      height:250,
-      width:250,
+        height:250,
+        width:250,
         marginBottom: 15,
     },
     button: {
@@ -62,7 +61,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
     },
     firstText: {
-      fontSize: 30,
+        fontSize: 30,
         marginBottom: 20,
     },
 });

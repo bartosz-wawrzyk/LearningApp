@@ -1,30 +1,31 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
-import HouseHome from "./HouseHome.js";
-import FoodHome from "./FoodHome.js";
-import MotoHome from "./MotoHome.js";
+import MotoBegginer from "../Moto/MotoBegginer";
+import MotoAdvanced from "../Moto/MotoAdvanced";
+import MotoExpert from "../Moto/MotoExpert";
 
 
-const Categories = ({navigation}) => {
+const MotoHome = ({navigation}) => {
+
     return (
         <View style = {styles.banner}>
             <Text style={styles.firstText}>ANGIELSKI W PIGUŁCE</Text>
-            <Image source={require('../images/iconcategories.png')} style={styles.image}/>
-            <Text style={styles.secondText}>Wybierz kategorię</Text>
-            <TouchableOpacity onPress={()=>navigation.navigate("MotoHome")} style = {styles.button} id = {1}>
-                <Text style = {styles.buttonText}>Motoryzacja</Text>
+            <Image source={require('../images/home.png')} style={styles.image}/>
+            <Text style={styles.secondText}>Wybierz poziom twoich umiejętności</Text>
+            <TouchableOpacity onPress={()=>navigation.navigate("MotoBegginer")} style = {styles.button}>
+                <Text style = {styles.buttonText}>Początkujący</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>navigation.navigate("FoodHome")} style = {styles.button}>
-                <Text style = {styles.buttonText}>Jedzenie</Text>
+            <TouchableOpacity onPress={()=>navigation.navigate("MotoAdvanced")} style = {styles.button}>
+                <Text style = {styles.buttonText}>Zaawansowany</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>navigation.navigate("HouseHome")} style = {styles.button}>
-                <Text style = {styles.buttonText}>Dom</Text>
+            <TouchableOpacity onPress={()=>navigation.navigate("MotoExpert")} style = {styles.button}>
+                <Text style = {styles.buttonText}>Ekspert</Text>
             </TouchableOpacity>
         </View>
     );
 }
 
-export default Categories;
+export default MotoHome;
 
 const styles = StyleSheet.create({
     banner: {
@@ -36,8 +37,8 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     image: {
-        height:250,
-        width:250,
+      height:250,
+      width:250,
         marginBottom: 15,
     },
     button: {
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
     },
     firstText: {
-        fontSize: 30,
+      fontSize: 30,
         marginBottom: 20,
     },
 });

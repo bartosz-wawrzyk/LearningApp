@@ -9,7 +9,7 @@ const Result = ({navigation}) => {
             </View>
 
             <View style = {styles.home}>
-                <TouchableOpacity onPress = {()=>navigation.navigate("Home")} style = {styles.button}>
+                <TouchableOpacity onPress = {()=>navigation.navigate("Categories")} style = {styles.button}>
                     <Text style = {styles.buttonText}>Powrót</Text>
                 </TouchableOpacity>
             </View>

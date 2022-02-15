@@ -1,19 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View,TouchableOpacity} from 'react-native';
+import {TouchableHighlight} from "react-native";
+import {Motos} from "./Moto";
 
-const Begginer = ({navigation}) => {
+
+const MotoBegginer = ({navigation}) => {
 
     return (
         <View style = {styles.containers}>
             <View style = {styles.tittle}>
-                <Text style = {styles.word}>Samochód</Text>
+                <Text style = {styles.word}>{Moto}</Text>
             </View>
             <View style = {styles.optiones}>
                 <TouchableOpacity style = {styles.buttonOption}>
                     <Text style = {styles.option}>car</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style = {styles.buttonOption}>
-                    <Text style = {styles.option}>apple</Text>
+                    <Text style = {styles.option}>testttt</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style = {styles.buttonOption}>
                     <Text style = {styles.option}>bike</Text>
@@ -22,6 +25,26 @@ const Begginer = ({navigation}) => {
                     <Text style = {styles.option}>green</Text>
                 </TouchableOpacity>
             </View>
+
+            <View style = {styles.tittle}>
+                <Text style = {styles.word}>test klikania</Text>
+            </View>
+            <View style = {styles.optiones}>
+                <TouchableHighlight onPress={() => this.changeModalVisibility(true)}
+                                    underlayColor={'#f1f1f1'} style = {[styles.touchableHighlight, {backgroundColor: 'orange'}]}>
+                    <Text style = {styles.option}>car</Text>
+                </TouchableHighlight>
+                <TouchableHighlight style = {styles.buttonOption}>
+                    <Text style = {styles.option}>testttt</Text>
+                </TouchableHighlight>
+                <TouchableHighlight style = {styles.buttonOption}>
+                    <Text style = {styles.option}>bike</Text>
+                </TouchableHighlight>
+                <TouchableHighlight style = {styles.buttonOption}>
+                    <Text style = {styles.option}>green</Text>
+                </TouchableHighlight>
+            </View>
+
             <View style = {styles.next}>
                 <TouchableOpacity style = {styles.button}>
                     <Text  style = {styles.buttonText}>POMIŃ</Text>
@@ -34,7 +57,7 @@ const Begginer = ({navigation}) => {
     );
 }
 
-export default Begginer;
+export default MotoBegginer;
 
 const styles = StyleSheet.create({
     containers: {
@@ -51,6 +74,11 @@ const styles = StyleSheet.create({
     optiones: {
         marginVertical: 16,
         flex: 1,
+    },
+    touchableHighlight: {
+        backgroundColor: 'white',
+        alignSelf: 'stretch',
+        alignItems: 'center',
     },
     next: {
         marginBottom: 12,
