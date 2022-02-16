@@ -1,13 +1,14 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, TextInput, TextComponent} from 'react-native';
 const axios = require('axios');
+import { REST_API } from '../../route';
 
 const Login = ({navigation}) => {
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
 
     function authenticate() {
-        axios.get('http://192.168.0.101:3000/login',  {
+         axios.get(`${REST_API}/login`,  {
           params: {
             username: email,
             password: password

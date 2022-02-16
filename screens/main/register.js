@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, TextInput, TextComponent} from 'react-native';
 const axios = require('axios');
+import { REST_API } from '../../route';
 
 const Register = ({navigation}) => {
     const [email, setEmail] = React.useState('');
@@ -11,7 +12,7 @@ const Register = ({navigation}) => {
         username: email,
         password: password
       }
-        axios.post('http://192.168.0.101:3000/register', params)
+        axios.post(`${REST_API}/register`, params)
         .then(function(response) {
           if(response.data.username == params.username) alert("Pomyślnie utworzono konto użytkownika");
         })
