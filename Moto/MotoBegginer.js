@@ -16,7 +16,6 @@ const MotoBegginer = ({navigation}) => {
                         <Text style={styles.word}>Samochód</Text>
                     </View>
                     <View style={styles.optiones}>
-                        {/*<TouchableOpacity style={{backgroundColor: color}} onPress={()=>{setColor("black")}}>*/}
                         <TouchableOpacity style={styles.buttonOption}>
                             <Text style={styles.option}>car</Text>
                         </TouchableOpacity>
@@ -146,6 +145,7 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         alignItems: 'center',
     },
+
     option: {
         fontSize: 20,
         fontWeight: '300',

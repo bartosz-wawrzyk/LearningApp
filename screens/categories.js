@@ -3,6 +3,7 @@ import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import HouseHome from "./HouseHome.js";
 import FoodHome from "./FoodHome.js";
 import MotoHome from "./MotoHome.js";
+import Main from "./Main";
 
 
 const Categories = ({navigation}) => {
@@ -20,6 +21,9 @@ const Categories = ({navigation}) => {
             <TouchableOpacity onPress={()=>navigation.navigate("HouseHome")} style = {styles.button}>
                 <Text style = {styles.buttonText}>Dom</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={()=>navigation.navigate("Main")} style = {styles.buttonLogOut}>
+                <Text style = {styles.textLogOut}>Wyloguj</Text>
+            </TouchableOpacity>
         </View>
     );
 }
@@ -28,7 +32,7 @@ export default Categories;
 
 const styles = StyleSheet.create({
     banner: {
-        paddingTop:50,
+        paddingTop:20,
         paddingHorizontal: 20,
         justifyContent: 'center',
         alignItems: 'center',
@@ -43,11 +47,10 @@ const styles = StyleSheet.create({
     button: {
         width: '100%',
         backgroundColor: '#228B22',
-        padding: 16,
+        padding: 12,
         borderRadius: 16,
         alignItems: 'center',
-
-        marginBottom: 30,
+        marginBottom: 20,
     },
     buttonText: {
         fontSize: 24,
@@ -55,7 +58,7 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     secondText: {
-        padding: 20,
+        padding: 10,
         fontStyle: 'italic',
         fontSize: 15,
     },
@@ -64,5 +67,17 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         color: '#006400',
         fontWeight: 'bold',
+    },
+    buttonLogOut: {
+        width: '100%',
+        backgroundColor: '#006400',
+        padding: 8,
+        borderRadius: 16,
+        alignItems: 'center',
+        marginBottom: 5,
+
+    },
+    textLogOut: {
+        color: 'white',
     },
 });

@@ -14,7 +14,7 @@ const Result = ({navigation}) => {
 
             <View style = {styles.home}>
                 <TouchableOpacity onPress = {()=>navigation.navigate("Categories")} style = {styles.button}>
-                    <Text style = {styles.buttonText}>Powrót</Text>
+                    <Text style = {styles.buttonText}>Strona główna</Text>
                 </TouchableOpacity>
             </View>
         </View>
