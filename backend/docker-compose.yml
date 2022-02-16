@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  backend:
+    build: .
+    container_name: backendAM
+    restart: always
+    ports:
+      - "3000:3000"

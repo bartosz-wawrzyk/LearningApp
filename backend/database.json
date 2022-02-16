@@ -1,0 +1,17 @@
+[
+  {
+    "id": "3e608eda-5aca-463d-96e0-9d584babfdeb",
+    "username": "admin",
+    "password": "admin"
+  },
+  {
+    "id": "e73eb7c5-15e4-452e-8c1a-f618fc6f3592",
+    "username": "user",
+    "password": "user"
+  },
+  {
+    "id": "ddeba98a-a626-42db-ae41-80ba48ed3840",
+    "username": "admin3",
+    "password": "admin"
+  }
+]

@@ -17,12 +17,16 @@ import FoodExpert from "../Food/FoodExpert";
 
 import Result from "../screens/result";
 import Categories from "../screens/categories";
+import Main from "../screens/Main"
+import { NavigationContainer } from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 
 function MyStack() {
     return (
+        <NavigationContainer independent={true}>
         <Stack.Navigator>
+            <Stack.Screen name = "Main" component={Main} options={{headerShown: false}} />
             <Stack.Screen name = "Categories" component = {Categories} options={{headerShown:false}}/>
             <Stack.Screen name = "HouseHome" component = {HouseHome} options={{headerShown:false}}/>
             <Stack.Screen name = "FoodHome" component = {FoodHome} options={{headerShown:false}}/>
@@ -42,6 +46,7 @@ function MyStack() {
 
             <Stack.Screen name = "Result" component = {Result} options={{headerShown:false}}/>
         </Stack.Navigator>
+        </NavigationContainer>
     );
 }
 
